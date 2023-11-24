@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr; 
+    background-color: lightgrey;
+}
+
+.login {
+    margin-top: 15%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+.loginHeader {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #4d4d4d;
+}
+
+.loginContent {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+
+}
+
+#username {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+#password {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+#loginButton {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    background-color: #4d4d4d;
+    color: white;
+    font-weight: bold;
+}
+
+#register {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    background-color: #4d4d4d;
+    color: white;
+    font-weight: bold;
+}
+
+#error {
+    font-family: Arial, Helvetica, sans-serif;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    text-align: center;
+    color: black;
+    background-color: lightcoral;
+    border-radius: 5px;
+    font-weight: bold;
+}

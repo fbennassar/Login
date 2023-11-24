@@ -3,28 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style/index.css" rel="stylesheet">
-    <title>Login</title>
+    <link href="style/register.css" rel="stylesheet">
+    <title>Register</title>
 </head>
 <body>
     
     <div class="container">
-        <div class="login">
-            <h1 class="loginHeader">Login</h1>
-            <form class="loginContent">
+        <div class="register" id="register">
+            
+            <h1 class="loginHeader">Register</h1>
+                
                 <input id="username" type="text" name="username" placeholder="Username" required="required" autocomplete="off" />
                 <input id="password" type="password" name="password" placeholder="Password" required="required" />
-                <button id="loginButton" type="button" class="btn btn-primary btn-block btn-large" onclick="login()">Login</button>
-                <div id="error"></div>
-            </form>
-
-            <a id="register" href="register.html">Register</a>
-
+            <button id="registerButton" type="button" onclick="register()">Register</button>
+            <button id="return" type="button" onclick="window.location.href='index.html'">Return</button>
+            <div id="error"></div>
         </div>
     </div>
 
-
     <script src="script/lib/axios.min.js"></script>
-    <script src="script/index.js"></script>
+    <script src="script/register.js"></script>
 </body>
 </html>
